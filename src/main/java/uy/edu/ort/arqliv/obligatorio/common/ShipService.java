@@ -18,7 +18,7 @@ public interface ShipService {
 	 * @return
 	 * @throws CustomServiceException
 	 */
-	public void store(String user, Ship ship) throws CustomServiceException;
+	public long store(String user, Ship ship) throws CustomServiceException;
 	public void delete(String user, long shipId) throws CustomServiceException;
 	public List<Ship> list(String user) throws CustomServiceException;
 }
