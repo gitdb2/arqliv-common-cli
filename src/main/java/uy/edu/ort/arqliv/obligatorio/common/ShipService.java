@@ -1,5 +1,6 @@
 package uy.edu.ort.arqliv.obligatorio.common;
 
+import java.util.Date;
 import java.util.List;
 
 import uy.edu.ort.arqliv.obligatorio.common.exceptions.CustomServiceException;
@@ -19,14 +20,16 @@ public interface ShipService {
 	 * @throws CustomServiceException
 	 */
 	public long store(String user, Ship ship) throws CustomServiceException;
+	
 	/**
 	 * TODO
 	 * @param user
 	 * @param ship
+	 * @param arrivalDate
 	 * @return
 	 * @throws CustomServiceException
 	 */
-	public long update(String user, Ship ship) throws CustomServiceException;
+	public long update(String user, Ship ship, Date arrivalDate) throws CustomServiceException;
 	/**
 	 * TODO
 	 * @param user
