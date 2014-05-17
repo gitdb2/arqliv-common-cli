@@ -60,13 +60,5 @@ public interface ArrivalService {
 	 * @throws CustomServiceException
 	 */
 	public Arrival find(String user, long id) throws CustomServiceException;
-
-	
-
-
-
-	
-
-	
 	
 }
