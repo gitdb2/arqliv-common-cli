@@ -12,7 +12,7 @@ import uy.edu.ort.arqliv.obligatorio.dominio.Container;
 public interface ContainerService {
 	
 	/**
-	 * TODO
+	 * Alta de un contenedor en el sistema
 	 * @param user
 	 * @param container
 	 * @return
@@ -21,7 +21,7 @@ public interface ContainerService {
 	public long store(String user, Container container) throws CustomServiceException;
 	
 	/**
-	 * TODO
+	 * modificacion, debe contener el id y los cambios
 	 * @param user
 	 * @param container
 	 * @return
@@ -30,7 +30,7 @@ public interface ContainerService {
 	public long update(String user, Container container) throws CustomServiceException;
 	
 	/**
-	 * TODO
+	 * da de baja un contenedor por id, solo posible si no esta en uso dicho conenedor
 	 * @param user
 	 * @param id
 	 * @throws CustomServiceException
@@ -38,7 +38,7 @@ public interface ContainerService {
 	public void delete(String user, long id) throws CustomServiceException;
 	
 	/**
-	 * TODO
+	 * Lista todos los contenedores en el sistema
 	 * @param user
 	 * @return
 	 * @throws CustomServiceException
@@ -46,7 +46,7 @@ public interface ContainerService {
 	public List<Container> list(String user) throws CustomServiceException;
 	
 	/**
-	 * TODO
+	 * Obtiene un contenedor por id
 	 * @param user
 	 * @param id
 	 * @return

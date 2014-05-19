@@ -12,7 +12,7 @@ import uy.edu.ort.arqliv.obligatorio.dominio.Arrival;
 public interface ArrivalService {
 	
 	/**
-	 * TODO
+	 * Alta de Arrival en el sistema
 	 * metodo synchronized para que no se pueda dar de alta a la vez dos arribos y poder controlar los contenedores
 	 * @param user
 	 * @param arrival
@@ -25,6 +25,9 @@ public interface ArrivalService {
 			List<Long> containerList) throws CustomServiceException;
 	
 	/**
+	 * Actualizacion de arrival, se debe proveer un arrival completo , con id, y cambios en atributos, el id del nuevo
+	 * barco (si no cambia poner el del original), y la lista de ids de contenedores a 
+	 * asignar ( si no cambia, se debe enviar la lista original)
 	 * metodo synchronized al igual que el alta.
 	 * @param user
 	 * @param arrival
@@ -37,7 +40,7 @@ public interface ArrivalService {
 			List<Long> containerList) throws CustomServiceException;
 	
 	/**
-	 * TODO
+	 * Baja de un arrival
 	 * @param user
 	 * @param id
 	 * @throws CustomServiceException
@@ -45,7 +48,7 @@ public interface ArrivalService {
 	public void delete(String user, long id) throws CustomServiceException;
 	
 	/**
-	 * TODO
+	 * Listado de todos los arrival en el sistema (eaguer fetch)
 	 * @param user
 	 * @return
 	 * @throws CustomServiceException
@@ -53,7 +56,7 @@ public interface ArrivalService {
 	public List<Arrival> list(String user) throws CustomServiceException;
 	
 	/**
-	 * TODO
+	 * Obtiene un arrival por id (eaguer fetch)
 	 * @param user
 	 * @param id
 	 * @return

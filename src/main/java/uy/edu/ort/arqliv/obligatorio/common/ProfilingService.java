@@ -13,7 +13,7 @@ import uy.edu.ort.arqliv.obligatorio.dominio.Pair;
 public interface ProfilingService {
 	
 	/**
-	 * 
+	 *  Consulta de tiempo promedio de ejecucion para una fecha determinada
 	 * @param user
 	 * @param forDate
 	 * @return
@@ -21,7 +21,7 @@ public interface ProfilingService {
 	public List<Pair<String, Double>> avgServiceTime(String user, Date forDate) throws CustomServiceException;
 
 	/**
-	 * 
+	 * Consulta de tiempo minimo de ejecucion para una fecha determinada
 	 * @param user
 	 * @param forDate
 	 * @return
@@ -29,7 +29,7 @@ public interface ProfilingService {
 	public List<Pair<String, Long>> minServiceTime(String user, Date forDate) throws CustomServiceException;
 	
 	/**
-	 * 
+	 * Consulta de tiempo maximo de ejecucion para una fecha determinada
 	 * @param user
 	 * @param forDate
 	 * @return

@@ -13,7 +13,7 @@ import uy.edu.ort.arqliv.obligatorio.dominio.Ship;
 public interface ShipService {
 	
 	/**
-	 * TODO
+	 * Alta de barco
 	 * @param user
 	 * @param ship
 	 * @return
@@ -22,7 +22,9 @@ public interface ShipService {
 	public long store(String user, Ship ship) throws CustomServiceException;
 	
 	/**
-	 * TODO
+	 * Actualiza la informacion de un barco para una determinada 
+	 * fecha (regla de negocio: no se puede modificar la capacidad de 
+	 * un barco si no arribo al puerto en essa fecha)
 	 * @param user
 	 * @param ship
 	 * @param arrivalDate
@@ -31,14 +33,14 @@ public interface ShipService {
 	 */
 	public long update(String user, Ship ship, Date arrivalDate) throws CustomServiceException;
 	/**
-	 * TODO
+	 * Baja de barco por id, requiere que el barcon no este en uso por ningun arrival 9en cyuo caso tira excepcion)
 	 * @param user
 	 * @param shipId
 	 * @throws CustomServiceException
 	 */
 	public void delete(String user, long shipId) throws CustomServiceException;
 	/**
-	 * TODO
+	 * LIsta los barcos del sistema
 	 * @param user
 	 * @return
 	 * @throws CustomServiceException
@@ -46,7 +48,7 @@ public interface ShipService {
 	public List<Ship> list(String user) throws CustomServiceException;
 	
 	/**
-	 * TODO
+	 * obtiene un barco a partir de su id
 	 * @param user
 	 * @param shipId
 	 * @return

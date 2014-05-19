@@ -2,7 +2,7 @@ package uy.edu.ort.arqliv.obligatorio.common.exceptions;
 
 import java.rmi.RemoteException;
 /**
- * 
+ * wrapper para excepciones del sistema propias
  * @author rodrigo
  *
  */

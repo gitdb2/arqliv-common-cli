@@ -4,7 +4,7 @@ import java.io.Serializable;
 /**
  * 
  * @author rodrigo
- *
+ * Dupla generica
  * @param <E>
  * @param <T>
  */

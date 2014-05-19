@@ -1,7 +1,7 @@
 package uy.edu.ort.arqliv.obligatorio.common.exceptions;
 
 /**
- * 
+ * Excpcion que indica que por ejemplo un container a borrar esta en uso y no es posible ejecutar la operacion
  * @author rodrigo
  *
  */

@@ -1,7 +1,7 @@
 package uy.edu.ort.arqliv.obligatorio.common.exceptions;
 
 /**
- * 
+ * Excepcion que representa que  no existe ningun arribo para la fecha especificada
  * @author rodrigo
  *
  */
