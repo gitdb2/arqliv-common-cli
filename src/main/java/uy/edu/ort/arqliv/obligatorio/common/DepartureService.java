@@ -15,14 +15,15 @@ public interface DepartureService {
 	 * Alta de Departure en el sistema
 	 * Metodo synchronized para que no se pueda dar de alta a la vez dos partidas y poder controlar los contenedores
 	 * @param user
-	 * @param Departure
 	 * @param shipId
+	 * @param arrivalId TODO
+	 * @param Departure
 	 * @param containerIdList
 	 * @return
 	 * @throws CustomServiceException
 	 */
 	long store(String user, Departure departure, Long shipId,
-			List<Long> containerList) throws CustomServiceException;
+			List<Long> containerList, Long arrivalId) throws CustomServiceException;
 	
 	/**
 	 * Actualizacion de Departure, se debe proveer un Departure completo , con id, y cambios en atributos, el id del nuevo
@@ -33,11 +34,12 @@ public interface DepartureService {
 	 * @param departure
 	 * @param shipId
 	 * @param containerList
+	 * @param arrivalId TODO
 	 * @return
 	 * @throws CustomServiceException
 	 */
 	long update(String user, Departure departure, Long shipId,
-			List<Long> containerList) throws CustomServiceException;
+			List<Long> containerList, Long arrivalId) throws CustomServiceException;
 	
 	/**
 	 * Baja de un Departure
